@@ -1,11 +1,4 @@
 
-average_chance_of_success = 0.4
-sd_of_success_chance = 0.1
-number_of_receivers = 25
-total_number_of_trials = 50
-
-
-
 trial_results_byoneperson = function(average_chance_of_success, sd_of_success_chance, total_number_of_trials, number_of_receivers){
   personal_chance_of_success = rnorm(n = 1, mean = average_chance_of_success, sd = sd_of_success_chance)
   if(personal_chance_of_success < 0.00000000001){personal_chance_of_success = 0.00000000001}
